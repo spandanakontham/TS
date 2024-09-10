@@ -44,8 +44,10 @@
                     </div>
                     <div id="property-inputs"></div>
                     <div class="button-container">
-                        <button id="cancel-btn">Cancel</button>
-                        <button id="save-btn">Save</button>
+                        <div class="left-button-container">
+                            <button id="cancel-btn">Cancel</button>
+                            <button id="save-btn">Save</button>
+                        </div>
                         <button id="generate-angles-btn">Generate Angles</button>
                     </div>
                 </div>
@@ -58,18 +60,26 @@
             </div>
             <div id="scripts" class="box">
                 <h2>Scripts</h2>
+                <select id="angle-selector">
+                    <option value="">Select an angle</option>
+                </select>
                 <div class="box-content">
-                    <!-- ... scripts content ... -->
+                    <!-- Scripts will be dynamically generated here -->
                 </div>
             </div>
             <div id="variants" class="box">
                 <h2>Variants</h2>
+                <select id="variant-angle-selector">
+                    <option value="">Select an angle</option>
+                </select>
+                <select id="variant-script-selector">
+                    <option value="">Select a script</option>
+                </select>
                 <div class="box-content">
-                    <!-- ... variants content ... -->
+                    <!-- Variants will be dynamically generated here -->
                 </div>
             </div>
         </div>
-        <!-- Save and Cancel buttons will be inserted here by JavaScript -->
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
